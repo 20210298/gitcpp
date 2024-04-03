@@ -1,4 +1,4 @@
-# Install script for directory: E:/gitcpp/untitled
+# Install script for directory: E:/20210298/gitcpp/untitled
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/gitcpp/untitled/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/20210298/gitcpp/untitled/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

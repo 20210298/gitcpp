@@ -3,11 +3,11 @@
 #include "FruitSeller.h"
 class FruitBuyer {
 private:
-    int money; //º¯¼ö¸íÀ» myMoney -> money·Î º¯°æ
-    int numOfApples=0;  //»ı¼ºÀÚ·Î ÃÊ±âÈ­ÇÏ¸é 0À¸·Î ÃÊ±âÈ­°¡ ¾ÈµÊ
+    int money; //ë³€ìˆ˜ëª…ì„ myMoney -> moneyë¡œ ë³€ê²½
+    int numOfApples=0;  //ìƒì„±ìë¡œ ì´ˆê¸°í™”í•˜ë©´ 0ìœ¼ë¡œ ì´ˆê¸°í™”ê°€ ì•ˆë¨
 public:
-    FruitBuyer();  //¸â¹ö   money¸¦   0¿øÀ¸·Î   ÃÊ±âÈ­
-    FruitBuyer(int money); //¸â¹ö   money¸¦   money·Î   ÃÊ±âÈ­
+    FruitBuyer();  //ë©¤ë²„   moneyë¥¼   0ì›ìœ¼ë¡œ   ì´ˆê¸°í™”
+    FruitBuyer(int money); //ë©¤ë²„   moneyë¥¼   moneyë¡œ   ì´ˆê¸°í™”
 //void InitMembers(int money);
     void BuyApples(FruitSeller& seller, int money);
     void ShowBuyResult();

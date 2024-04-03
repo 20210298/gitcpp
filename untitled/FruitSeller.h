@@ -1,7 +1,7 @@
 #ifndef __FRUIT_SELLER_H__
 #define __FRUIT_SELLER_H__
 struct SaleResult {
-    int numOfApplesBought; //±¸¸ÅÇÑ »ç°ú °³¼ö
+    int numOfApplesBought; //êµ¬ë§¤í•œ ì‚¬ê³¼ ê°œìˆ˜
     int change;
 };
 class FruitSeller {
@@ -10,8 +10,8 @@ private:
     int numOfApples;
     int money;
 public:
-//ÀÜµ·
-    FruitSeller(); //¸ğµç   ¸â¹ö   º¯¼ö¸¦   0À¸·Î   ÃÊ±âÈ­
+//ì”ëˆ
+    FruitSeller(); //ëª¨ë“    ë©¤ë²„   ë³€ìˆ˜ë¥¼   0ìœ¼ë¡œ   ì´ˆê¸°í™”
     FruitSeller(int price, int num, int money);
 //void InitMembers(int price, int num, int money);
     SaleResult SaleApples(int money);

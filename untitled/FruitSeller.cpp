@@ -3,7 +3,7 @@
 
 using namespace std;
 
-FruitSeller::FruitSeller() : applePrice(0), numOfApples(0), money(0) {}; //¸ðµç   ¸â¹ö   º¯¼ö¸¦   0À¸·Î   ÃÊ±âÈ­
+FruitSeller::FruitSeller() : applePrice(0), numOfApples(0), money(0) {}; //ëª¨ë“    ë©¤ë²„   ë³€ìˆ˜ë¥¼   0ìœ¼ë¡œ   ì´ˆê¸°í™”
 FruitSeller::FruitSeller(int price, int num, int money) {
     this->applePrice = price;
     this->numOfApples = num;
@@ -17,14 +17,14 @@ SaleResult FruitSeller::SaleApples(int money){
         num=this->numOfApples;
     }
     this->numOfApples-=num;
-    //ÀÜµ· Ã³¸®
+    //ìž”ëˆ ì²˜ë¦¬
     int change=money-(num*this->applePrice);
     return {num,change};
 }
 
 void FruitSeller::ShowSalesResult() {
-    cout << "³²Àº »ç°ú : " << this->numOfApples << endl;
-    cout << "ÆÇ¸Å ¼öÀÍ : " << this->money << endl;
+    cout << "ë‚¨ì€ ì‚¬ê³¼ : " << this->numOfApples << endl;
+    cout << "íŒë§¤ ìˆ˜ìµ : " << this->money << endl;
 }
 
 void FruitSeller::ChangePrice(int price){

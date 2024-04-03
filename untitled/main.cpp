@@ -5,20 +5,20 @@
 using namespace std;
 
 int main() {
-    FruitSeller seller (1000, 20, 0);    //»ı¼ºÀÚ »ç¿ë
-//seller.InitMembers(1000, 20, 0);   //»èÁ¦
-    FruitBuyer buyer (20000);           //»ı¼ºÀÚ »ç¿ë
-//buyer.InitMembers(20000); //»èÁ¦
-    seller.ChangePrice(500);   //»ç°ú °¡°İ 500¿øÀ¸·Î º¯°æ
+    FruitSeller seller (1000, 20, 0);    //ìƒì„±ì ì‚¬ìš©
+//seller.InitMembers(1000, 20, 0);   //ì‚­ì œ
+    FruitBuyer buyer (20000);           //ìƒì„±ì ì‚¬ìš©
+//buyer.InitMembers(20000); //ì‚­ì œ
+    seller.ChangePrice(500);   //ì‚¬ê³¼ ê°€ê²© 500ì›ìœ¼ë¡œ ë³€ê²½
     while (1) {
         int tryBuy;
-        cout << "±¸¸Å¸¦ ¿øÇÏ´Â ±İ¾× ÀÔ·Â:";
+        cout << "êµ¬ë§¤ë¥¼ ì›í•˜ëŠ” ê¸ˆì•¡ ì…ë ¥:";
         cin >> tryBuy;
         if (tryBuy < 0) break;
         buyer.BuyApples(seller, tryBuy);
-        cout << "> °úÀÏ ÆÇ¸ÅÀÚÀÇ ÇöÈ²" << endl;
+        cout << "> ê³¼ì¼ íŒë§¤ìì˜ í˜„í™©" << endl;
         seller.ShowSalesResult();
-        cout << "> °úÀÏ ±¸¸ÅÀÚÀÇ ÇöÈ²" << endl;
+        cout << "> ê³¼ì¼ êµ¬ë§¤ìì˜ í˜„í™©" << endl;
         buyer.ShowBuyResult();
         cout << endl;
     }

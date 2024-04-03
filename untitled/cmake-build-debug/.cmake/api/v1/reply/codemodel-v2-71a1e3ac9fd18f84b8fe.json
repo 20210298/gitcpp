@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/gitcpp/untitled/cmake-build-debug",
-		"source" : "E:/gitcpp/untitled"
+		"build" : "E:/20210298/gitcpp/untitled/cmake-build-debug",
+		"source" : "E:/20210298/gitcpp/untitled"
 	},
 	"version" : 
 	{
