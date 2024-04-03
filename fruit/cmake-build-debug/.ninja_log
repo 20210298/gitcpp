@@ -1,3 +1,9 @@
 # ninja log v5
-0	269	7338532324040700	CMakeFiles/fruit.dir/main.cpp.obj	74b16c1387117318
-270	410	7338532325421485	fruit.exe	88112cb7573509b9
+2	254	7338598658145422	CMakeFiles/fruit.dir/main.cpp.obj	74b16c1387117318
+254	379	7338598659347385	fruit.exe	1bf85d5eb6776da9
+1	254	7338596754958604	CMakeFiles/fruit.dir/FruitSeller.cpp.obj	dcd59e3f7136dd96
+5	261	7338595912981918	CMakeFiles/fruit.dir/FruitBuyer.cpp.obj	e2c2ae038aa3b125
+0	167	7338599351318585	build.ninja	f7dfb204246db6ef
+1	156	7338599351318585	build.ninja	f7dfb204246db6ef
+4	297	7338599354822951	CMakeFiles/fruit.dir/FruitSeller.cpp.obj	baeab7f3efdaeb70
+7	298	7338599354822951	CMakeFiles/fruit.dir/FruitBuyer.cpp.obj	23a3b1938283528

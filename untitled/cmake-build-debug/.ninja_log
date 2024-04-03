@@ -1,0 +1,6 @@
+# ninja log v5
+2	255	7338618125781213	CMakeFiles/untitled.dir/main.cpp.obj	ee11398daa445241
+1	139	7338618693540609	build.ninja	a9fcc1bea022a840
+256	369	7338618126890544	untitled.exe	d532c26deb6c2bc4
+5	256	7338618125791396	CMakeFiles/untitled.dir/FruitBuyer.cpp.obj	16670d5fe75c49cd
+8	283	7338613476071341	CMakeFiles/untitled.dir/FruitSeller.cpp.obj	2cc0f09514424ddf
