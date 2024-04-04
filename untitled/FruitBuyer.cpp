@@ -5,8 +5,9 @@
 using namespace std;
 
 FruitBuyer::FruitBuyer() : money(0), numOfApples(0) {}; //멤버   money를   0원으로   초기화
-FruitBuyer::FruitBuyer(int money) : numOfApples(0) {
+FruitBuyer::FruitBuyer(int money) : {
     this->money = money;
+    this->numOfApples(0);
     
 } //멤버   money를   money로   초기화
 //void InitMembers(int money);
