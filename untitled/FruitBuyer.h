@@ -4,7 +4,7 @@
 class FruitBuyer {
 private:
     int money; //변수명을 myMoney -> money로 변경
-    int numOfApples=0;
+    int numOfApples=0; //초기 numOfApples를 0으로 초기화
 public:
     FruitBuyer();  //멤버   money를   0원으로   초기화
     FruitBuyer(int money); //멤버   money를   money로   초기화
