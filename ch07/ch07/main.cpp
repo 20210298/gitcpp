@@ -3,6 +3,9 @@
 #include <iostream>
 
 using namespace std;
+namespace RISK_LEVE {
+	enum { RISK_A = 30, RISK_B = 20, RISK_C = 10 };
+}
 
 class Employee {
 	char name[100];
@@ -78,7 +81,7 @@ class EmployeeHandler {
 	Employee* empList[50];
 	int empNum;
 public:
-	EmployeeHandler() : empNum(0) {};
+	EmployeeHandler() : empNum(0) {}
 	void AddEmployee(Employee* emp) {
 		empList[empNum++] = emp;
 	}
@@ -101,23 +104,36 @@ public:
 	}
 };
 
+class ForeignSalesWorker:public SalesWorker {
+	const int riskLevel;
+public:
+	ForeignSalesWorker(const char* name, int money, double ratio, int risk) :SalesWorker(name, money, ratio), riskLevel(risk) {}
+	int GetRiskPay() const {
+		return SalesWorker::GetPay() * this->riskLevel / 100;
+	}
+	int GetPay() const {
+		return SalesWorker::GetPay()+this->GetRiskPay();
+	}
+	void ShowSalaryInfo() {
+		ShowYourName();
+		cout << "Salary: " << SalesWorker::GetPay() << endl;
+		cout << "Risk pay: " << this->GetRiskPay() << endl;
+		cout << "Sum: " << this->GetPay()<< endl << endl;
+	}
+};
+
 int main() {
-	//급여 관리를 목적으로 설계된 핸들러 객체 생성
-	EmployeeHandler handler;
-	//정규직 등록
-	handler.AddEmployee(new PermanentWorker("Kim", 200));
-	handler.AddEmployee(new PermanentWorker("Lee", 350));
-	//비정규직 등록
-	TemporaryWorker* tmp = new TemporaryWorker("Choi", 10);
-	tmp->AddWorkTime(10);
-	handler.AddEmployee(tmp);
-	//영업직 등록
-	SalesWorker* seller = new SalesWorker("Hong", 200, 0.1);
-	seller->AddSaleResult(1000);
-	handler.AddEmployee(seller);
-	//이번 달에 지급해야할 급여 정보
+	EmployeeHandler handler; //급여 관리를 목적으로 설계된 핸들러 객체 생성
+	ForeignSalesWorker* fSeller1 = new ForeignSalesWorker("Hong", 1000, 0.1, RISK_LEVE::RISK_A);
+	fSeller1->AddSaleResult(7000); //영업 실적 추가
+	handler.AddEmployee(fSeller1);
+	ForeignSalesWorker* fSeller2 = new ForeignSalesWorker("Choi", 1000, 0.1, RISK_LEVE::RISK_B);
+	fSeller2->AddSaleResult(7000); //영업 실적 추가
+	handler.AddEmployee(fSeller2);
+	ForeignSalesWorker* fSeller3 = new ForeignSalesWorker("Kim", 1000, 0.1, RISK_LEVE::RISK_C);
+	fSeller3->AddSaleResult(7000); //영업 실적 추가
+	handler.AddEmployee(fSeller3);
+	//이번 달 급여 지불 정보
 	handler.ShowAllSalaryInfo();
-	//이번 달에 지급해야할 총 급여
-	handler.ShowTotalSalary();
 	return 0;
 }

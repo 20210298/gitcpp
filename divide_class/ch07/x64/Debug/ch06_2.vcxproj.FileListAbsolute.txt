@@ -1,2 +1,0 @@
-C:\Users\user\Desktop\gitcpp\ch06\ch06_2\x64\Debug\ch06_2.exe
-C:\Users\user\Desktop\gitcpp\ch07\ch07\x64\Debug\ch07.exe
