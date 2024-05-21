@@ -1,0 +1,3 @@
+C:\Users\user\Desktop\gitcpp\ch11\Project1\x64\Debug\Project1.exe
+C:\Users\user\Desktop\gitcpp\ch11\Project1\x64\Debug\Project1.exe.lastcodeanalysissucceeded
+C:\Users\user\Desktop\gitcpp\ch11\Project1\x64\Debug\NativeCodeAnalysis.read.1.tlog
